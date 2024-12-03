@@ -1,0 +1,134 @@
+{
+  "id": "2f44e6e1-5afc-477b-a5c0-1a1d0786cb4a",
+  "version": "2.0",
+  "name": "qa_log_true",
+  "url": "http://127.0.0.1:5000",
+  "tests": [{
+    "id": "2608e3b0-020a-49c3-9fb7-2ef8572def31",
+    "name": "login_true",
+    "commands": [{
+      "id": "464795f1-d900-4e3e-abd1-9fd97cd875f7",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d2c2c85-9302-4ecf-9c0a-2d21794c45e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b9f6b8e-3fe9-4b06-b845-f615b880ea97",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9171e9e1-81cf-4a16-9fb9-a1145b54b890",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "andreikutss@gmail.com"
+    }, {
+      "id": "25c5b89c-3b73-4814-b9c6-7503814ac775",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f08370f-0971-48a1-909a-02f4b9c1a0cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "7551fac7-dc9c-42c2-bede-fe87080b3c08",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Sign in']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83f72147-78eb-4bd5-b157-f4d7cd627f28",
+      "comment": "",
+      "command": "click",
+      "target": "id=inventoryGrid",
+      "targets": [
+        ["id=inventoryGrid", "id"],
+        ["css=#inventoryGrid", "css:finder"],
+        ["xpath=//div[@id='inventoryGrid']", "xpath:attributes"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d14ccd8-8706-4e42-ba60-958e424d5134",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick=\"filterByRarity('All')\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a80351ba-0cf9-4fcf-8b40-f9cf65fc6daa",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick=\"filterByRarity('Common')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Common')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38b23772-50bd-451b-b1c6-40466daeb12d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2608e3b0-020a-49c3-9fb7-2ef8572def31"]
+  }],
+  "urls": ["http://127.0.0.1:5000/"],
+  "plugins": []
+}
